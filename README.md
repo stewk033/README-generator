@@ -1,25 +1,30 @@
-# README
+# Title
 
 ## Description
 
-This is the description
+ This is my description
+
+## Table of Contents
 
 ## Installation
 
-These are the installation instructions
+ These are the installation instructions
 
 ## Usage
 
-This is the usage information
+ This is the usage information.
 
-## Credit
+## Contribution
 
-These are the contribution guidelines
+ These are the contribution guidelines.
 
 ## License
 
-GPL
+ BSD
 
 ## Tests
 
-These are the test instructions
+ These are the test instructions.
+
+## Questions
+

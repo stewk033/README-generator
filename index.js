@@ -18,9 +18,10 @@
 // TODO: Include packages needed for this application
 const inquirer = require('inquirer');
 const fs = require('fs');
+const generateLicense = require('license.js')
 
 // TODO: Create an array of questions for user input
-const questions = [
+const info = [
     {
         name: "title",
         type: "input",
@@ -55,12 +56,12 @@ const questions = [
         name: "license",
         type: "list",
         message: "Do you want to include a license?",
-        choices: ["BSD", "MIT", "GPL", "none"],
+        choices: ["BSD", "MIT", "GNU", "none"],
     },
     {
         name: "username",
         type: "input",
-        message: "What is my GitHub username?",
+        message: "Enter your GitHub username (Required)",
     },
     {
         name: "email",
@@ -71,7 +72,7 @@ const questions = [
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
-    const content = data.title + data.description + data.installation + data.usage + data.credits + data.license + data.test
+    const content = data.title + data.description + data.toc + data.installation + data.usage + data.contribution + data.license + data.test + data.questions
     fs.writeFile(fileName, content, (err) => {
         if (err) throw err;
     
@@ -81,18 +82,20 @@ function writeToFile(fileName, data) {
 
 // TODO: Create a function to initialize app
 function init() {
-    inquirer.prompt(questions)
+    inquirer.prompt(info)
     .then(answers => {
         const data = {
             title: `# ${answers.title}\n\n`,
             description: `## Description\n\n ${answers.description}\n\n`,
+            toc: `## Table of Contents\n\n`,
             installation: `## Installation\n\n ${answers.install}\n\n`,
             usage: `## Usage\n\n ${answers.usage}\n\n`,
-            credits: `## Credit\n\n ${answers.contribution}\n\n`,
-            license: `## License\n\n ${answers.license}\n\n`,
+            contribution: `## Contribution\n\n ${answers.contribution}\n\n`,
+            license: `## License\n\n ${generateLicense(answers.license)}\n\n`,
             test: `## Tests\n\n ${answers.test}\n\n`,
-            username: answers.username,
-            email: answers.email,
+            questions: `## Questions\n\n`,
+            username: `${answers.username}\n\n`,
+            email: `${answers.email}\n\n`,
         }
         writeToFile("README.md", data)
     })
