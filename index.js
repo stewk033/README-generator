@@ -114,7 +114,7 @@ function init() {
         const data = {
             title: `# ${answers.title}\n\n`,
             description: `## Description\n\n ${answers.description}\n\n`,
-            toc: `## Table of Contents\n\n * [Installation](#installation)\n * [Usage](#usage)\n * [License](#license)\n * [Contribution](#contribution)\n * [Test](#test)\n * [Questions](#questions)\n\n`,
+            toc: `## Table of Contents\n\n * [Installation](#install)\n\n`,
             installation: `## Installation\n\n ${answers.install}\n\n`,
             usage: `## Usage\n\n ${answers.usage}\n\n`,
             contribution: `## Contribution\n\n ${answers.contribution}\n\n`,

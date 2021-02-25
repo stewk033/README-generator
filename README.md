@@ -2,30 +2,29 @@
 
 ## Description
 
- The destructuring assignment syntax is a JavaScript expression that makes it possible to unpack values from arrays, or properties from objects, into distinct variables.
+ I would like to share my project whit u. It’s a readme generator, really easy and simple! It’s in Portuguese yet, I’m working on to translate it to English.
 
 ## Table of Contents
 
 ## Installation
 
- The object and array literal expressions provide an easy way to create ad hoc packages of data.
+ The destructuring assignment syntax is a JavaScript expression that makes it possible to unpack values from arrays, or properties from objects, into distinct variables.
 
 ## Usage
 
- The destructuring assignment uses similar syntax, but on the left-hand side of the assignment to define what values to unpack from the sourced variable.
+ The object and array literal expressions provide an easy way to create ad hoc packages of data.
 
 ## Contribution
 
- This capability is similar to features present in languages such as Perl and Python.
+ The destructuring assignment uses similar syntax, but on the left-hand side of the assignment to define what values to unpack from the sourced variable.
 
 ## License
 
- 
-[![License](https://img.shields.io/badge/License-BSD%203--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)
+ [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## Tests
 
- It's always been possible to return an array from a function. Destructuring can make working with an array return value more concise.
+ This capability is similar to features present in languages such as Perl and Python.
 
 ## Questions
 
