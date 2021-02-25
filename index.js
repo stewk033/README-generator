@@ -99,7 +99,7 @@ const info = [
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
-    const content = data.title + data.description + data.toc + data.installation + data.usage + data.contribution + data.license + data.test + data.questions + data.email //+ data.username
+    const content = data.title + data.description + data.toc + data.installation + data.usage + data.contribution + data.license + data.test + data.questions
     fs.writeFile(fileName, content, (err) => {
         if (err) throw err;
     
