@@ -18,7 +18,7 @@
 // TODO: Include packages needed for this application
 const inquirer = require('inquirer');
 const fs = require('fs');
-const generateLicense = require('license.js')
+//const generateMarkdown = require('./utils/generateMarkdown.js');
 
 // TODO: Create an array of questions for user input
 const info = [
@@ -26,6 +26,14 @@ const info = [
         name: "title",
         type: "input",
         message: "What is the title?",
+        validate: titleInput => {
+            if (titleInput) {
+                return true;
+            } else {
+                console.log("You must have a title");
+                return false;
+            }
+        }
     },
     {
         name: "description",
@@ -61,13 +69,34 @@ const info = [
     {
         name: "username",
         type: "input",
-        message: "Enter your GitHub username (Required)",
+        message: "Enter your GitHub username",
+        validate: usernameInput => {
+            if (usernameInput) {
+                return true;
+            } else {
+                console.log("Please enter a GitHub username");
+                return false;
+            }
+        }
     },
     {
         name: "email",
         type: "input",
         message: "What is my email address?",
     },
+    {
+        name: "repo",
+        type: "input",
+        message: "What is the name of your GitHub repository?",
+        validate: repoInput => {
+            if (repoInput) {
+                return true;
+            } else {
+                console.log("Please enter the name of your repo");
+                return false;
+            }
+        }
+    }
 ];
 
 // TODO: Create a function to write README file
@@ -85,17 +114,17 @@ function init() {
     inquirer.prompt(info)
     .then(answers => {
         const data = {
-            title: `# ${answers.title}\n\n`,
+            username: `${answers.username}\n\n`,
+            email: `${answers.email}\n\n`,
+            title: `# ${answers.title}\n\n ![Badge for GitHub repo top language](https://img.shields.io/github/languages/top/${answers.username}/${answers.repo}?style=flat&logo=appveyor) ![Badge for GitHub repo size](https://img.shields.io/github/repo-size/${answers.username}/${answers.repo}?style=flat&logo=appveyor)`,
             description: `## Description\n\n ${answers.description}\n\n`,
             toc: `## Table of Contents\n\n`,
             installation: `## Installation\n\n ${answers.install}\n\n`,
             usage: `## Usage\n\n ${answers.usage}\n\n`,
             contribution: `## Contribution\n\n ${answers.contribution}\n\n`,
-            license: `## License\n\n ${generateLicense(answers.license)}\n\n`,
+            license: `## License\n\n ${renderLicenseSection(answers.license)}\n\n`,
             test: `## Tests\n\n ${answers.test}\n\n`,
-            questions: `## Questions\n\n`,
-            username: `${answers.username}\n\n`,
-            email: `${answers.email}\n\n`,
+            questions: `## Questions\n\n Contact Me:\n GitHub: https://github.com/${answers.username} \n Email: ${answers.email}\n`,
         }
         writeToFile("README.md", data)
     })
