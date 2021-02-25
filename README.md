@@ -6,37 +6,26 @@
 
 ## Table of Contents
 
-
-            * [Installation](#installation)
-
-            * [Usage](#usage)
-
-            * [License](#license)
-
-            * [Contributing](#contributing)
-
-            * [Tests](#tests)
-
-            * [Questions](#questions)
 ## Installation
 
  The object and array literal expressions provide an easy way to create ad hoc packages of data.
 
 ## Usage
 
- 
+ The destructuring assignment uses similar syntax, but on the left-hand side of the assignment to define what values to unpack from the sourced variable.
 
 ## Contribution
 
- The destructuring assignment uses similar syntax, but on the left-hand side of the assignment to define what values to unpack from the sourced variable.
+ This capability is similar to features present in languages such as Perl and Python.
 
 ## License
 
- [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
+ 
+[![License](https://img.shields.io/badge/License-BSD%203--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)
 
 ## Tests
 
- This capability is similar to features present in languages such as Perl and Python.
+ It's always been possible to return an array from a function. Destructuring can make working with an array return value more concise.
 
 ## Questions
 
