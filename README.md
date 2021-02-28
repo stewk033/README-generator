@@ -2,34 +2,35 @@
 
 ## Description
 
-  The destructuring assignment syntax is a JavaScript expression that makes it possible to unpack values from arrays, or properties from objects, into distinct variables.
+The destructuring assignment syntax is a JavaScript expression that makes it possible to unpack values from arrays, or properties from objects, into distinct variables.
 
 ## Table of Contents
 
- * [Installation](#install)
+- [Installation](#install)
+- [Usage](#usage)
 
 ## Installation
 
-  The object and array literal expressions provide an easy way to create ad hoc packages of data.
+The object and array literal expressions provide an easy way to create ad hoc packages of data.
 
 ## Usage
 
-  The destructuring assignment uses similar syntax, but on the left-hand side of the assignment to define what values to unpack from the sourced variable.
+The destructuring assignment uses similar syntax, but on the left-hand side of the assignment to define what values to unpack from the sourced variable.
 
 ## Contribution
 
-  This capability is similar to features present in languages such as Perl and Python.
+This capability is similar to features present in languages such as Perl and Python.
 
 ## License
 
- [![License](https://img.shields.io/badge/License-BSD%203--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)
+[![License](https://img.shields.io/badge/License-BSD%203--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)
 
 ## Tests
 
-  The destructuring assignment syntax is a JavaScript expression that makes it possible to unpack values from arrays, or properties from objects, into distinct variables.
+The destructuring assignment syntax is a JavaScript expression that makes it possible to unpack values from arrays, or properties from objects, into distinct variables.
 
 ## Questions
 
- Contact Me:
-  GitHub: https://github.com/stewk033 
-  Email: kev_ace04@yahoo.com
+Contact Me:
+GitHub: https://github.com/stewk033
+Email: kev_ace04@yahoo.com
