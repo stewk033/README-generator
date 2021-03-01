@@ -21,7 +21,6 @@
  This application is used to generate a high-quality professional README file. See the following demonstration:
  [Link to Demo](https://drive.google.com/file/d/1zkUxx6n_BrxqPs70LpclECbYO0zC_kbn/view)
  
- ![Gif](assets/README-Demo.gif)
 
 ## Contribution
 
