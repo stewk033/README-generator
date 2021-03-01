@@ -14,11 +14,14 @@
  - [Questions](#questions)
 ## Installation
 
- To create your own README, first run npm install to install the npm package dependencies. To run the application, type node index.js in your command-line.
+ To create your own README, first run `npm install` to install the npm package dependencies. To run the application, type `node index.js` in your command-line.
 
 ## Usage
 
  This application is used to generate a high-quality professional README file. See the following demonstration:
+ [Link to Demo](https://drive.google.com/file/d/1zkUxx6n_BrxqPs70LpclECbYO0zC_kbn/view)
+ 
+ ![Gif](assets/README-Demo.gif)
 
 ## Contribution
 
@@ -26,7 +29,8 @@
 
 ## License
 
- [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
+ 
+[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 
 ## Tests
 
